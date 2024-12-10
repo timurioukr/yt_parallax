@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Parkinsans"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+
+    <title>Parallax Webpage</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span class="logo">LOGO</span>
+        <ul>
+          <li>
+            <a href="#">Login</a>
+          </li>
+          <li>
+            <a href="#">Sign up</a>
+          </li>
+          <li class="search">
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </li>
+          <li class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="vignette"></div>
+
+      <img
+        src="img/bg.jpg"
+        data-rotation="0"
+        data-speedz="0"
+        data-speedy="0.30"
+        data-speedx="0.30"
+        class="parallax bg-img"
+      />
+      <img
+        src="img/el1.png"
+        data-rotation="0.29"
+        data-speedz="0.13"
+        data-speedy="0.34"
+        data-speedx="0.34"
+        class="parallax el-1"
+      />
+      <img
+        src="img/sm1.png"
+        data-rotation="0"
+        data-speedz="0.0"
+        data-speedy="0.11"
+        data-speedx="0.11"
+        class="parallax sm-1"
+      />
+      <img
+        src="img/el2.png"
+        data-rotation="0.15"
+        data-speedz="0.5"
+        data-speedy="0.24"
+        data-speedx="0.24"
+        class="parallax el-2"
+      />
+      <img
+        src="img/sm2.png"
+        data-rotation="0"
+        data-speedz="0.0"
+        data-speedy="0.19"
+        data-speedx="0.19"
+        class="parallax sm-2"
+      />
+      <img
+        src="img/el3.png"
+        data-rotation="0.24"
+        data-speedz="0.1"
+        data-speedy="0.1"
+        data-speedx="0.1"
+        class="parallax el-3"
+      />
+      <img
+        src="img/sm3.png"
+        data-rotation="0"
+        data-speedz="0.0"
+        data-speedy="0.13"
+        data-speedx="0.13"
+        class="parallax sm-3"
+      />
+      <div
+        data-rotation="0"
+        data-speedz="0.23"
+        data-speedy="0.07"
+        data-speedx="0.07"
+        class="parallax text"
+      >
+        <h2>Parallax</h2>
+        <h1>Webpage</h1>
+      </div>
+      <img
+        src="img/sm4.png"
+        data-rotation="0"
+        data-speedz="0.0"
+        data-speedy="0.39"
+        data-speedx="0.39"
+        class="parallax sm-4"
+      />
+      <img
+        src="img/sm5.png"
+        data-rotation="0"
+        data-speedz="0.0"
+        data-speedy="0.24"
+        data-speedx="0.24"
+        class="parallax sm-5"
+      />
+      <img
+        src="img/sm6.png"
+        data-rotation="0"
+        data-speedz="0.0"
+        data-speedy="0.08"
+        data-speedx="0.08"
+        class="parallax sm-6"
+      />
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

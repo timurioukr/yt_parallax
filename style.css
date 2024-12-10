@@ -1,0 +1,278 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Parkinsans", sans-serif;
+  background-color: #333;
+}
+
+::selection {
+  background: #034d3b;
+}
+
+.logo {
+  width: 100px;
+  color: #ffff;
+}
+
+header {
+  width: 100%;
+  border-bottom: 1px solid #6161617e;
+  position: absolute;
+  z-index: 9999;
+  padding: 0.9rem 0;
+  top: 0;
+  left: 0;
+
+  nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: #ffff;
+      padding: 0 1.5rem;
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 0.83rem;
+    }
+  }
+}
+
+.search a {
+  font-size: 1.05rem;
+  padding: 0 3rem;
+}
+
+.hamburger {
+  width: 37px;
+  height: 37px;
+  background: #7b7b7b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.hamburger i {
+  font-size: 24px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger.active i {
+  transform: rotate(180deg);
+}
+
+.hamburger.active {
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  transform: scale(1.1);
+}
+
+main {
+  position: relative;
+  background-color: #034d3b;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.parallax {
+  pointer-events: none;
+  transition: 0.45s cubic-bezier(0.21, 0.67, 0.19, 0.99);
+}
+
+.bg-img {
+  position: absolute;
+  width: 2800px;
+  top: calc(50% - 390px);
+  left: calc(50% + 10px);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.sm-1 {
+  position: absolute;
+  width: 1400px;
+  top: calc(50% - 100px);
+  left: calc(50% + 200px);
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.el-1 {
+  position: absolute;
+  width: 2400px;
+  top: calc(50% + 100px);
+  left: calc(50% + 350px);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.sm-2 {
+  position: absolute;
+  width: 801px;
+  top: calc(50% - 43px);
+  left: calc(50% - 395px);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.el-2 {
+  position: absolute;
+  width: 2400px;
+  top: calc(50% + 300px);
+  left: calc(50% - 850px);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.sm-3 {
+  position: absolute;
+  width: 300px;
+  bottom: -182px;
+  left: calc(50% - 128px);
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+
+.el-3 {
+  position: absolute;
+  width: 1100px;
+  top: calc(50% + 400px);
+  left: calc(50% - 600px);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.text {
+  position: absolute;
+  z-index: 1;
+  top: calc(50% - 130px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 0.88;
+  pointer-events: auto;
+
+  h1 {
+    font-weight: 800;
+    font-size: 8rem;
+    line-height: 0.88;
+  }
+
+  h2 {
+    font-weight: 100;
+    font-size: 6.5rem;
+  }
+}
+
+.sm-4 {
+  position: absolute;
+  width: 689px;
+  top: calc(50% - 200px);
+  right: calc(50% - 1067px);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.sm-5 {
+  position: absolute;
+  width: 471px;
+  top: calc(50% + 249px);
+  right: calc(50% - 578px);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.vignette {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0),
+    65%,
+    rgba(0, 0, 0, 0.7)
+  );
+  pointer-events: none;
+}
+
+
+@media (max-width: 1100px) {
+  .text {
+    h1 {
+      font-size: 5.8rem;
+    }
+
+    h2 {
+      font-size: 4.7rem;
+    }
+  }
+}
+
+@media (max-width: 725px) {
+  .text {
+    line-height: 1.1;
+
+    h1 {
+      font-size: 5rem;
+    }
+
+    h2 {
+      font-size: 4.1rem;
+    }
+  }
+
+  .logo {
+    width: 75px;
+  }
+
+  header {
+    nav {
+      padding: 0 1rem;
+    }
+
+    ul a {
+      font-size: 0.73rem;
+      padding: 0 0.3rem;
+    }
+  }
+
+  .search a {
+    font-size: 0.85rem;
+    padding: 0 1.8rem;
+  }
+}
+
+@media (max-width: 330px) {
+  header {
+    ul a {
+      display: none;
+    }
+  }
+}
